@@ -1,0 +1,67 @@
+{
+  "name": "lashbrook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "0.17.1",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.0.0-beta.3",
+    "classnames": "2.2.5",
+    "history": "4.7.2",
+    "intl": "1.2.5",
+    "lodash": "4.17.4",
+    "moment": "^2.20.1",
+    "react-scripts": "1.1.1",
+    "prop-types": "15.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-loadable": "5.3.1",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
+    "react-router-redux": "5.0.0-alpha.9",
+    "react-toastify": "3.0.0",
+    "redux": "3.7.2",
+    "redux-form": "^7.2.0",
+    "redux-thunk": "2.2.0",
+    "reselect": "3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --colors",
+    "test:coverage": "react-scripts test --env=jsdom --ci --runInBand --coverage --colors",
+    "format:js": "prettier --config .prettierrc \"src/**/*.js\" --write",
+    "lint:js": "eslint --config .eslintrc \"src/**/*.js\"",
+    "lint:style": "stylelint \"src/**/*.scss\"",
+    "precommit": "lint-staged",
+    "prepush": "npm run test:coverage",
+    "build-storybook": "build-storybook -s public"
+  },
+  "devDependencies": {
+    "eslint": "4.13.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-import-resolver-webpack": "0.8.3",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.5.1",
+    "husky": "0.14.3",
+    "lint-staged": "5.0.0",
+    "prettier": "1.8.2",
+    "redux-devtools-extension": "2.13.2",
+    "redux-logger": "3.0.6",
+    "stylelint": "8.3.1",
+    "stylelint-config-standard": "18.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run format:js",
+      "npm run lint:js",
+      "git add"
+    ],
+    "*.scss": [
+      "npm run lint:style",
+      "git add"
+    ]
+  },
+  "homepage": "."
+}
