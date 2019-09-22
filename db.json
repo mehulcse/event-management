@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "id": 1, "name": "Lorem Ipsum", "date": "10-12-2019"
+    },
+    {
+      "id": 2, "name": "Lorem Ipsum", "date": "10-12-2019"
+    },
+    {
+      "id": 3, "name": "Lorem Ipsum", "date": "10-12-2019"
+    }
+  ]
+}

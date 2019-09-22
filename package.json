@@ -1,8 +1,14 @@
 {
-  "name": "ReactBoilerPlate",
+  "name": "events",
   "version": "0.1.0",
+  "author": "Mehul",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/icons": "^4.4.1",
+    "@material-ui/styles": "^4.4.1",
+    "@material-ui/pickers": "^3.2.6",
+    "@date-io/moment": "^1.3.9",
     "axios": "0.17.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.0.0-beta.3",
@@ -10,15 +16,16 @@
     "history": "4.7.2",
     "intl": "1.2.5",
     "lodash": "4.17.4",
-    "moment": "^2.20.1",
-    "react-scripts": "1.1.1",
+    "moment": "^2.24.0",
+    "react-scripts": "3.1.1",
+    "styled-components": "^4.3.2",
     "prop-types": "15.6.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
     "react-loadable": "5.3.1",
     "react-redux": "5.0.6",
-    "react-router-dom": "4.2.2",
     "react-router-redux": "5.0.0-alpha.9",
+    "react-router-dom": "^5.0.1",
     "react-toastify": "3.0.0",
     "redux": "3.7.2",
     "redux-form": "^7.2.0",
@@ -27,41 +34,29 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --colors",
-    "test:coverage": "react-scripts test --env=jsdom --ci --runInBand --coverage --colors",
-    "format:js": "prettier --config .prettierrc \"src/**/*.js\" --write",
-    "lint:js": "eslint --config .eslintrc \"src/**/*.js\"",
-    "lint:style": "stylelint \"src/**/*.scss\"",
-    "precommit": "lint-staged",
-    "prepush": "npm run test:coverage",
-    "build-storybook": "build-storybook -s public"
+    "build": "react-scripts build"
   },
   "devDependencies": {
-    "eslint": "4.13.1",
-    "eslint-config-airbnb": "16.1.0",
-    "eslint-import-resolver-webpack": "0.8.3",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "6.0.3",
-    "eslint-plugin-react": "7.5.1",
-    "husky": "0.14.3",
-    "lint-staged": "5.0.0",
-    "prettier": "1.8.2",
     "redux-devtools-extension": "2.13.2",
     "redux-logger": "3.0.6",
-    "stylelint": "8.3.1",
-    "stylelint-config-standard": "18.0.0"
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3"
   },
-  "lint-staged": {
-    "*.js": [
-      "npm run format:js",
-      "npm run lint:js",
-      "git add"
+  "homepage": ".",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "*.scss": [
-      "npm run lint:style",
-      "git add"
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
-  },
-  "homepage": "."
+  }
 }

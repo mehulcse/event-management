@@ -10,6 +10,19 @@
 4. Build: `yarn run build` (Look for `build` folder after process exits)
 
 
+### Install json-server
+On different CLI you need to install json-server globally 
+```
+npm install -g json-server
+```
+
+### To Run json-server for Mock DB
+```
+json-server --watch db.json --port 3004
+```
+You can use any port number instead of 3004.
+
+
 ## Contribution Guide
 
 Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
