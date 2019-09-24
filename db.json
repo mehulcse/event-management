@@ -1,13 +1,48 @@
 {
   "events": [
     {
-      "id": 1, "name": "Lorem Ipsum", "date": "10-12-2019"
+      "id": 1,
+      "title": "Kaafi Wild Hai - Stand Up Special by Appurv Gupta",
+      "cardImage": "https://in.bmscdn.com/Events/moviecard/kaafi-wild-hai-stand-up-special-by-appurv-gupta-et00109925-2019-8-26-t-18-21-11.jpg",
+      "date": "22/10/2019",
+      "price": 300,
+      "venue": "Mahatma Phule Sanskrutik Bhavan",
+      "city": "Pune",
+      "buttonText": "Details",
+      "buttonVariant": "contained"
     },
     {
-      "id": 2, "name": "Lorem Ipsum", "date": "10-12-2019"
+      "id": 2,
+      "title": "Selling Myself Short by Shankar Chugani",
+      "cardImage": "https://in.bmscdn.com/Events/moviecard/selling-myself-short-by-shankar-chugani-et00109812-2019-8-19-t-17-27-51.jpg",
+      "date": "24/10/2019",
+      "price": 350,
+      "venue": "Spade Comedy Club",
+      "city": "Pune",
+      "buttonText": "Details",
+      "buttonVariant": "contained"
     },
     {
-      "id": 3, "name": "Lorem Ipsum", "date": "10-12-2019"
+      "id": 3,
+      "title": "Thursday Live ft. Animal Minds",
+      "cardImage": "https://in.bmscdn.com/Events/moviecard/thursday-live-ft-animal-minds-et00111137-2019-9-5-t-18-24-35.jpg",
+      "date": "25/10/2019",
+      "price": 550,
+      "venue": "Hard Rock Cafe",
+      "city": "Pune",
+      "buttonText": "Details",
+      "buttonVariant": "contained"
+    },
+    {
+      "id": 4,
+      "title": "Laughter Riot - A Stand-up Comedy Show",
+      "cardImage": "https://in.bmscdn.com/Events/moviecard/laughter-riot-a-stand-up-comedy-show-et00110329-2019-8-26-t-15-58-20.jpg",
+      "date": "25/10/2019",
+      "price": 700,
+      "venue": "Hard Rock Cafe",
+      "city": "Pune",
+      "buttonText": "Details",
+      "buttonVariant": "contained"
     }
   ]
 }
