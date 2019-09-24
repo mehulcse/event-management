@@ -16,7 +16,7 @@ const Events = ({events}) => {
   const renderEvents = () => events && events.length > 0 && events.map(event => <Event event={event} key={event.id}/> );
 
   return (
-    <Grid xs={12} item>
+    <Grid xs={12} container spacing={2}>
       {renderEvents()}
     </Grid>
   );

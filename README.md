@@ -1,4 +1,4 @@
-# React boiler plate with Redux.
+npm i# React boiler plate with Redux.
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
