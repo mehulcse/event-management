@@ -1,34 +1,16 @@
 import React from 'react';
 import {
-    AppBar,
     Grid,
-    IconButton,
-    makeStyles,
-    Tab,
-    Tabs,
-    Tooltip,
     Typography,
     Card,
     CardActions,
     CardContent,
-    CardHeader,
-    CardMedia,
     Button,
     Box,
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import PaperBox from '../Shared/PaperBox';
-
-/*const useStyles = makeStyles(theme => ({
-    eventLocation:{
-        'color': '#999',
-    },
-}));*/
 
 const Event = ({ event }) => {
-/*
-    const classes = useStyles();
-*/
     return (
         <Grid xs={3} item>
             <Card>
@@ -95,12 +77,12 @@ const Event = ({ event }) => {
                 <CardActions>
                     <Button
                         fullWidth
-                        variant={event.buttonVariant}
+                        variant="contained"
                         color="primary"
                         component={Link}
-                        to={`eventDetails/${event.id}`}
+                        to={`events/${event.id}`}
                     >
-                        {event.buttonText}
+                        Details
                     </Button>
                 </CardActions>
             </Card>

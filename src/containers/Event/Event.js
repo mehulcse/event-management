@@ -2,59 +2,57 @@ import React from 'react';
 import {
   AppBar,
   Grid,
-  IconButton,
-  Tab,
-  Tabs,
-  Tooltip,
-  Typography
 } from "@material-ui/core";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import { createSelector } from 'reselect';
 import Loader from '../../components/Shared/Loader';
-import Events from '../../components/Events';
+import Event from '../../components/Event';
 import * as actions from './actions';
-import { makeSelectIsFetching, makeSelectEvents } from './selectors';
+import { makeSelectIsFetching, makeSelectEvent } from './selectors';
 
-class EventsContainer extends React.Component {
+class EventContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
   componentWillMount = () => {
-    this.props.getEvents();
+    const { match: { params: { id } } } = this.props;
+    if(id){
+      this.props.getEvent(id);
+    }
   };
 
   render() {
     const {
       isFetching,
-      events,
+      event,
     } = this.props;
     return (
       <Grid>
         <AppBar position="static" color="default"/>
-        <Events events={events} />
+        <Event event={event} />
         <Loader timedOut={isFetching}/>
       </Grid>
     );
   }
 }
 
-EventsContainer.propTypes = {
+EventContainer.propTypes = {
   isFetching: PropTypes.bool,
-  events: PropTypes.array,
-  getEvents: PropTypes.func.isRequired,
+  event: PropTypes.array,
+  getEvent: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = createSelector(
   [
     makeSelectIsFetching(),
-    makeSelectEvents()],
-  (isFetching, events) => ({
+    makeSelectEvent()],
+  (isFetching, event) => ({
     isFetching,
-    events,
+    event,
   })
 );
 
@@ -66,4 +64,4 @@ const mapDispatchToProps = dispatch =>
     dispatch
   );
 
-export default connect(mapStateToProps, mapDispatchToProps)(EventsContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(EventContainer);
