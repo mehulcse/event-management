@@ -2,7 +2,7 @@
   "events": [
     {
       "id": 1,
-      "title": "Kaafi Wild Hai - Stand Up Special by Appurv Gupta",
+      "title": "Lorem Ipsum Kaafi Wild Hai - Stand Up Special by Appurv Gupta",
       "cardImage": "https://in.bmscdn.com/Events/moviecard/kaafi-wild-hai-stand-up-special-by-appurv-gupta-et00109925-2019-8-26-t-18-21-11.jpg",
       "date": "22/10/2019",
       "price": 300,
@@ -43,6 +43,29 @@
       "city": "Pune",
       "buttonText": "Details",
       "buttonVariant": "contained"
+    }
+  ],
+  "users": [
+    {
+      "id": 1, 
+      "name":"Lorem",
+      "email": "test@test.com",
+      "password": "test",
+      "role": "guest"
+    },
+    {
+      "id": 2, 
+      "name":"Lorem 2",
+      "email": "test2@test.com",
+      "password": "test",
+      "role": "admin"
+    },
+    {
+      "id": 3, 
+      "name":"Lorem 3",
+      "email": "test3@test.com",
+      "password": "test",
+      "role": "user"
     }
   ]
 }
